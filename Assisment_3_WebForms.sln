@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assisment_3_WebForms", "Assisment_3_WebForms\Assisment_3_WebForms.csproj", "{3C8B91FB-F1A5-47C3-9988-5E59CF9E0D63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assisment_3_WebForms.Tests", "Assisment_3_WebForms.Tests\Assisment_3_WebForms.Tests.csproj", "{B0E543DF-7078-4FCB-A1B1-3978E0D06CA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C8B91FB-F1A5-47C3-9988-5E59CF9E0D63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C8B91FB-F1A5-47C3-9988-5E59CF9E0D63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C8B91FB-F1A5-47C3-9988-5E59CF9E0D63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C8B91FB-F1A5-47C3-9988-5E59CF9E0D63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0E543DF-7078-4FCB-A1B1-3978E0D06CA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0E543DF-7078-4FCB-A1B1-3978E0D06CA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0E543DF-7078-4FCB-A1B1-3978E0D06CA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0E543DF-7078-4FCB-A1B1-3978E0D06CA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
