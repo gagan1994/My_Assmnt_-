@@ -10,10 +10,13 @@ namespace Assisment_3_WebForms
 	{
 		protected Button submit;
 		protected Button details;
+		protected Button save;
 		protected TextBox name, age, email, address;
+		protected TextBox ename, eage, eemail, eaddress,eId;
 		protected TableRow r;
 		protected TableCell c;
 		protected Table Table1;
+
 		protected Button[] delete;
 		protected Button[] edit;
 

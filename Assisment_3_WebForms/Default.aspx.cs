@@ -34,6 +34,33 @@ namespace Assisment_3_WebForms
 			}
 		}
 
+		[WebMethod]
+		public static CustomerDetails EditItem(int id)
+		{
+
+			CustomerDetails c = cList.Find(x => x.Id == id);
+
+			return c;
+
+		}
+		public void OnSave(object sender, EventArgs args)
+		{
+			int i = int.Parse(eId.Text);
+
+			foreach (CustomerDetails c in cList)
+			{
+				if (c.Id == i )
+				{
+					c.Name = ename.Text;
+					c.Age = int.Parse(eage.Text);
+					c.Address = eaddress.Text;
+					c.Email = eemail.Text;
+
+				}
+			}
+
+		}
+
 
 		public void OnSubmit(object sender, EventArgs args)
 		{
@@ -82,11 +109,11 @@ namespace Assisment_3_WebForms
 				
 			}
 
-			submit.Text = "You clicked me";
+
 		}
 		public void OnDetails(object sender, EventArgs args)
 		{
-			details.Text = "You clicked me";
+			
 			int i = 0;
 			delete = new Button[cList.Count];
 			edit = new Button[cList.Count];
@@ -120,7 +147,7 @@ namespace Assisment_3_WebForms
 			//del
 				delete[i] = new Button();
 				delete[i].ID = cin.Id.ToString();
-
+				delete[i].Attributes["class"] = "delete";
 				delete[i].UseSubmitBehavior = false;
 				delete[i].Text="Delete";
 
@@ -136,6 +163,7 @@ namespace Assisment_3_WebForms
 				edit[i].Text = "Edit";
 
 				//delete[i].Click += new EventHandler(Delete);
+				edit[i].Attributes["class"] = "edit";
 				edit[i].Attributes["runat"] = "server";
 				edit[i].Attributes["OnClick"] = "DeleteKartItems(" + cin.Id + ",\"EditItem\");return false";
 
@@ -169,14 +197,7 @@ namespace Assisment_3_WebForms
 			return "Deleted Succesfully";
 
 		}
-		[WebMethod]
-		public static string EditItem(int id)
-		{
-			CustomerDetails c = cList.Find(x => x.Id == id);
-			cList.Remove(c);
-			return "Edited Succesfully";
 
-		}
 
 	}
 }
